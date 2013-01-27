@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+	<aop:config>
+		<aop:pointcut id="carrental.DriverService"
+			expression="execution(* com.company.carrental.services.core.service.DriverServiceImpl*.*(..))" />
+		<aop:advisor advice-ref="carrental.txAdvice" pointcut-ref="carrental.DriverService" />
+	</aop:config>
+
+	<bean id="DriverService"
+		class="com.company.carrental.services.core.service.DriverServiceImpl">
+		<property name="driverMasterDao">
+			<ref bean="carrental.DriverMasterDao" />
+		</property>
+		<property name="driverContactDao">
+			<ref bean="carrental.DriverContactDao" />
+		</property>
+		<property name="driverAddressDao">
+			<ref bean="carrental.DriverAddressDao" />
+		</property>
+		<property name="driverEducationDao">
+			<ref bean="carrental.DriverEducationDao" />
+		</property>
+		<property name="driverEmploymentDao">
+			<ref bean="carrental.DriverEmploymentDao" />
+		</property>
+		<property name="driverBackgroundCheckDao">
+			<ref bean="carrental.DriverBackgroundCheckDao" />
+		</property>
+
+	</bean>
+
+</beans>
