@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "F:/apis/hibernate-3.2.2.ga/hibernate-3.2/src/org/hibernate/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	
+    <session-factory>
+			
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Car_Rental</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+		<property name="cache.enable_second_level_cache">true</property>
+		<property name="cache.use_query_cache">true</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- 
+        create: Drop and re-create the database schema on startup 
+        update: Identify If Present,Create if Not Present
+        		Identify COnstraints, 
+        		Alters table If constraint are absent
+        validate: Check the mappings with Table schema
+        		  if mismatch is present will throw exceptions/errors
+    	-->    
+        <property name="hbm2ddl.auto">validate</property>
+	
+        <mapping resource="entities/Person.hbm.xml"/>
+        <mapping resource="entities/Account.hbm.xml"/>
+        <mapping resource="entities/Transaction.hbm.xml"/>
+         <mapping resource="entities/Payment.hbm.xml"/>
+         
+        
+    </session-factory>
+
+</hibernate-configuration>
+
+
+
+
+

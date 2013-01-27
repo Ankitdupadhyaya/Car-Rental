@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+   	<persistence-unit name="myapp">
+      <provider>org.hibernate.ejb.HibernatePersistence</provider>
+      
+      <class>com.company.carrental.data.car_rental_data.DriverMaster</class>
+      <!--class>annotations.Category</class>
+      <class>annotations.Ingredient</class-->
+      
+      <properties>
+         <property name="hibernate.ejb.cfgfile" 
+         		value="hibernate.cfg.xml"/>
+      </properties>
+   </persistence-unit>
+</persistence>

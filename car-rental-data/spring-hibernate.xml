@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- HibernateTemplate -->
+	<bean id="hibTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"/>	
+	</bean>
+	
+	<!-- AnnotationSessionFactoryBean -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="mySQLDS"/>
+		
+		<property name="annotatedClasses">
+			<list>
+				<value>com.company.carrental.data.car_rental_data.DriverMaster</value>
+				<!-- value>annotations.Category</value>
+				<value>annotations.Ingredient</value-->				
+			</list>
+		</property>
+		
+		<property name="mappingResources">
+			<list>
+				<!-- value>entities/Account.hbm.xml</value>
+				<value>entities/Employee.hbm.xml</value>
+				<value>entities/Transaction.hbm.xml</value>
+				<value>entities/Person.hbm.xml</value-->								
+			</list>
+		</property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">create</prop>
+			</props>
+		</property>
+		
+	</bean>
+	
+	<!-- DriverManagerDataSource -->
+	<bean id="mySQLDS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" 
+				value="com.mysql.jdbc.Driver"/>
+		<property name="url" 
+				value="jdbc:mysql://localhost:3306/Car_Rental"/>
+		<property name="username" value="root"/>
+		<property name="password" value="root"/><!-- admin -->
+	</bean>
+
+</beans>
+
+
+
+
+
+

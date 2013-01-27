@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="">
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/Car_Rental</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Password</property>
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">1</property>
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<!-- create: Drop and re-create the database schema on startup update: 
+			Identify If Present,Create if Not Present Identify COnstraints, Alters table 
+			If constraint are absent validate: Check the mappings with Table schema if 
+			mismatch is present will throw exceptions/errors -->
+		<property name="hbm2ddl.auto">create</property>
+		<!-- <mapping resource="entities/Person.hbm.xml"/> <mapping resource="entities/Account.hbm.xml"/> 
+			<mapping resource="entities/Transaction.hbm.xml"/> <mapping resource="entities/Payment.hbm.xml"/> 
+			Mapping files -->
+		<!-- <mapping class="com.company.carrental.data.car_rental_data.AddressTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.CarTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.AreaMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverDocumentsMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.RatingMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ApplicationStatusMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.NearestAreas"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.CarTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverApplication"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ApplicationStatusHistory"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverCarTypes"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverAddress"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverEducation"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverEmployment"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverBackgroundCheck"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriversDocuments"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverAreaPreference"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverJobPreference"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.JobTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ClientTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ClientMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ClientContact"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ClientAddress"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.SpecialInfoMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.ClientSpecialInfo"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverAdminInterview"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverClientInterview"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.TicketStatusMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.DriverRequirementTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.TicketMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.PaymentTypeMaster"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.TicketPayment"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.TicketStatusHistory"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.TicketFeedback"/> 
+			<mapping class="com.company.carrental.data.car_rental_data.UsersCodes" /> 
+			<mapping class="com.company.carrental.data.car_rental_data.Codifiers" /> 
+			<mapping class="com.company.carrental.data.car_rental_data.User" /> -->
+		<mapping
+			class="com.company.carrental.data.car_rental_data.ContactTypeMaster" />
+		<mapping class="com.company.carrental.data.car_rental_data.DriverContact" />
+		<mapping class="com.company.carrental.data.car_rental_data.DriverMaster" />
+	</session-factory>
+</hibernate-configuration>

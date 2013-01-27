@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	<!-- <import resource="classpath:com/company/carrental/database/ctx/common/ApplicationContext-DAO.xml" 
+		/> <import resource="classpath:com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml" 
+		/> -->
+	<bean id="carrental.propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jtds.carrental.properties</value>
+			</list>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+
+	<bean id="carrental.dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"
+		lazy-init="true">
+		<property name="jndiName">
+			<value>datasource_carrental</value>
+		</property>
+	</bean>
+
+	<bean id="carrental.dataSource.local" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close" lazy-init="true">
+		<property name="driverClassName">
+			<value>${datasource.driverClassName}</value>
+		</property>
+
+		<property name="url">
+			<value>${datasource.carrental.url}</value>
+		</property>
+
+		<property name="username">
+			<value>${datasource.username}</value>
+		</property>
+
+		<property name="password">
+			<value>${datasource.password}</value>
+		</property>
+	</bean>
+
+	<bean id="carrental.hibernateProperties"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+				<prop key="hibernate.dialect">${hibernateProperties.hibernate.dialect}</prop>
+
+				<prop key="hibernate.show_sql">${hibernateProperties.hibernate.show_sql}</prop>
+
+				<prop key="hibernate.format_sql">${hibernateProperties.hibernate.format_sql}</prop>
+
+				<prop key="hibernate.use_sql_comments">${hibernateProperties.hibernate.use_sql_comments}
+				</prop>
+
+				<prop key="hibernate.generate_statistics">${hibernateProperties.hibernate.generate_statistics}
+				</prop>
+
+				<prop key="hibernate.cache.provider_class">${hibernateProperties.hibernate.cache.provider_class}
+				</prop>
+
+				<prop key="hibernate.cache.use_second_level_cache">${hibernateProperties.hibernate.cache.use_second_level_cache}
+				</prop>
+
+				<prop key="hibernate.connection.autocommit">${hibernateProperties.hibernate.connection.autocommit}
+				</prop>
+
+				<prop key="hibernate.transaction.auto_close_session">${hibernateProperties.hibernate.transaction.auto_close_session}
+				</prop>
+
+				<prop key="hibernate.current_session_context_class">${hibernateProperties.hibernate.current_session_context_class}
+				</prop>
+
+				<prop key="hibernate.bytecode.use_reflection_optimizer">${hibernateProperties.hibernate.bytecode.use_reflection_optimizer}
+				</prop>
+
+				<prop key="hibernate.query.substitutions">${hibernateProperties.hibernate.query.substitutions}
+				</prop>
+
+				<prop key="hibernate.connection.release_mode">${hibernateProperties.hibernate.connection.release_mode}
+				</prop>
+
+				<prop key="hibernate.transaction.flush_before_completion">${hibernateProperties.hibernate.transaction.flush_before_completion}
+				</prop>
+
+				<prop key="hibernate.query.factory_class">${hibernateProperties.hibernate.query.factory_class}
+				</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="carrental.transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="carrental.sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="carrental.hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="carrental.sessionFactory" />
+		</property>
+
+		<property name="cacheQueries">
+			<value>true</value>
+		</property>
+	</bean>
+
+	<!-- the transactional advice (i.e. what 'happens'; see the <aop:advisor/> 
+		bean below) -->
+	<tx:advice id="carrental.txAdvice" transaction-manager="carrental.transactionManager">
+		<!-- the transactional semantics ... -->
+		<tx:attributes>
+			<!-- other methods use the default transaction settings (see below) -->
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<util:list id="carrental.mappingResourcesList">
+		<!-- value>classpath:com/company/carrental/data/pojo/DriverMaster.java</value -->
+	</util:list>
+
+	<bean id="carrental.mappingResources"
+		class="org.springframework.beans.factory.config.ListFactoryBean"
+		parent="carrental.mappingResourcesList">
+		<property name="sourceList">
+			<list merge="true">
+			</list>
+		</property>
+	</bean>
+
+	<bean id="carrental.sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"
+		abstract="false" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="hibernateProperties">
+			<ref bean="carrental.hibernateProperties" />
+		</property>
+
+		<!-- property name="entityInterceptor"> <ref bean="carrental.entityAuditLogInterceptor" 
+			/> </property> -->
+		<property name="annotatedClasses">
+			<list>
+				<value>com.company.carrental.data.pojo.AreaMaster</value>
+				<value>com.company.carrental.data.pojo.DriverMaster</value>
+				<value>com.company.carrental.data.pojo.DriverContact</value>
+				<value>com.company.carrental.data.pojo.ContactTypeMaster</value>
+				<value>com.company.carrental.data.pojo.DriverAddress</value>
+				<value>com.company.carrental.data.pojo.AddressTypeMaster</value>
+				<value>com.company.carrental.data.pojo.DriverEducation</value>
+				<value>com.company.carrental.data.pojo.DriverEmployment</value>
+				<value>com.company.carrental.data.pojo.DriverBackgroundCheck</value>
+			</list>
+		</property>
+		<property name="dataSource">
+			<!-- ref bean="${carrental.dataSource.ref}" / -->
+			<ref bean="carrental.dataSource.local" />
+		</property>
+		<property name="mappingResources">
+			<ref bean="carrental.mappingResources" />
+		</property>
+	</bean>
+
+	<!-- Bean to append session factory list in audit <bean id="carrental.ApplicationSessionFactoriesForAudit" 
+		class="com.bnpparibas.cib.almt.kondor.database.audit.listeners.ApplicationSessionFactoriesForAudit"> 
+		<property name="sessionFactoryName"> <value>carrental.sessionFactory</value> 
+		</property> </bean> -->
+</beans>
