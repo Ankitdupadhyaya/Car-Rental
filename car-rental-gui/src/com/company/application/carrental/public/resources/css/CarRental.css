@@ -1,0 +1,32 @@
+
+.red-background {
+	background-color: #CC0000; !important;
+}
+
+.green-background {
+   background-color: #00CC00; !important;
+}
+
+.orange-background {
+	background-color: #FF9933; !important;
+}
+
+.level1 {
+	background: url(../../images/icons/level1.png) repeat center left !important;
+}
+
+.level2 {
+	background: url(../../images/icons/level2.png) repeat center left !important;
+}
+
+.level3 {
+	background: url(../../images/icons/level3.png) repeat center left !important;
+}
+
+.expand_all {
+  background: url(../../images/icons/expand_all.gif) no-repeat center left !important;
+}
+
+.collapse_all {
+  background: url(../../images/icons/collapse_all.gif) no-repeat center left !important;
+}

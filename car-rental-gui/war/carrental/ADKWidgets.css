@@ -1,0 +1,67 @@
+/*
+ * ADKWidgets StyleSheet
+ */
+
+.x-panel-login {
+    color: #91ceb9;
+    background: #91ceb9;
+    background-color: #91ceb9;
+}
+
+.adk-label {
+   color: black;
+   font-size: 8pt;
+}
+
+.adk-label-disable {
+   color: #ACB0AF;
+   font-size: 8pt;
+}
+
+.adk-label-mandatory {
+   color: black;
+   font-size: 8pt;
+   font-weight : bold;
+}
+
+.adk-hyperlink {
+	color: black;
+	font-size: 8pt;
+	text-decoration: underline;
+  cursor: pointer;
+}
+
+.adk-hyperlink-blue {
+	color: blue;
+	font-size: 8pt;
+	text-decoration: underline;
+  	cursor: pointer;
+}
+
+.adk-hyperlink-white {
+	color: white;
+	font-size: 8pt;
+	text-decoration: underline;
+  	cursor: pointer;
+}
+
+div.adk-hyperlink-disable a{
+  color: #ACB0AF;
+  font-size: 8pt;
+  text-decoration: underline;
+}
+
+.adk-radio {
+   color: black;
+   font-size: 8pt;
+}
+
+.adk-radio-disable {
+   color: #ACB0AF;
+   font-size: 8pt;
+}
+
+.adk-checkbox {
+   color: black;
+   font-size: 8pt;
+}

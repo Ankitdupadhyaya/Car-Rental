@@ -1,0 +1,27 @@
+<module rename-to="carrental">
+
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+
+	<inherits name='com.sencha.gxt.ui.GXT' />
+
+	<inherits name='com.sencha.gxt.cell.core.Core' />
+	<!-- <inherits name='com.extjs.gxt.charts.Chart' /> <inherits name="com.bnpparibas.cib.almt.kondor.frmk.gui.adkwidgets.KondorADKWidgets" 
+		/> -->
+
+	<inherits name="org.puremvc4gwt.PureMVC4GWT" />
+	<!-- Inherit the GWTChismes -->
+	<!-- <inherits name="com.google.code.p.gwtchismes.GWTChismes" /> <stylesheet 
+		src="GWTC-compressed.css" /> -->
+	<!-- Specify the app entry point class. -->
+
+	<inherits name="com.company.gui.adkwidgets.ADKWidgets" />
+
+	<entry-point class='com.company.application.carrental.client.CarRental' />
+
+	<stylesheet src='resources/css/CarRental.css' />
+
+	<extend-configuration-property name="document.compatMode"
+		value="BackCompat" />
+
+</module>

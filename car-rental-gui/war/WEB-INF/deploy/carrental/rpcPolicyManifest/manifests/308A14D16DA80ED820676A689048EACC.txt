@@ -1,0 +1,2 @@
+serviceClass: com.company.application.carrental.client.service.interfaces.CarRentalService
+path: 2E62747CB0C028EE3BF355BFE170B900.gwt.rpc

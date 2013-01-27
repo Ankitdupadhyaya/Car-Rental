@@ -1,0 +1,637 @@
+2013-01-26 09:06:06,680 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5577df: display name [org.springframework.context.support.ClassPathXmlApplicationContext@5577df]; startup date [Sat Jan 26 09:06:06 IST 2013]; root of context hierarchy
+2013-01-26 09:06:07,033 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [CarRentalPersistenceContext.xml]
+2013-01-26 09:06:09,564 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:06:09,878 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:06:10,151 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/services/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:06:10,381 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:06:10,491 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:06:10,590 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'carrental.propertyConfigurer': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]]
+2013-01-26 09:06:10,597 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:06:10,646 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:06:10,742 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@5577df]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1564196
+2013-01-26 09:06:11,790 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:06:11,875 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:06:12,019 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1564196: defining beans [carrental.DriverMasterDao,carrental.DriverContactDao,carrental.DriverAddressDao,carrental.DriverEducationDao,carrental.DriverEmploymentDao,carrental.DriverBackgroundCheckDao,carrental.propertyConfigurer,carrental.dataSource,carrental.dataSource.local,carrental.hibernateProperties,carrental.transactionManager,carrental.hibernateTemplate,carrental.txAdvice,carrental.mappingResourcesList,carrental.mappingResources,carrental.sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,carrental.DriverService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,DriverService,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:06:13,623 INFO  [org.hibernate.cfg.annotations.Version] Hibernate Annotations 3.3.0.GA
+2013-01-26 09:06:13,653 INFO  [org.hibernate.cfg.Environment] Hibernate 3.2.5
+2013-01-26 09:06:13,664 INFO  [org.hibernate.cfg.Environment] hibernate.properties not found
+2013-01-26 09:06:13,670 INFO  [org.hibernate.cfg.Environment] Bytecode provider name : cglib
+2013-01-26 09:06:13,679 INFO  [org.hibernate.cfg.Environment] using JDK 1.4 java.sql.Timestamp handling
+2013-01-26 09:06:14,209 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AreaMaster
+2013-01-26 09:06:14,385 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AreaMaster on table Area_Master
+2013-01-26 09:06:14,807 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverMaster
+2013-01-26 09:06:14,808 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverMaster on table driver_master
+2013-01-26 09:06:14,842 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverContact
+2013-01-26 09:06:14,842 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverContact on table Driver_Contact
+2013-01-26 09:06:14,897 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.ContactTypeMaster
+2013-01-26 09:06:14,898 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.ContactTypeMaster on table Contact_Type_Master
+2013-01-26 09:06:14,917 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverAddress
+2013-01-26 09:06:14,917 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverAddress on table Driver_Address
+2013-01-26 09:06:14,921 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AddressTypeMaster
+2013-01-26 09:06:14,925 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AddressTypeMaster on table Address_Type_Master
+2013-01-26 09:06:14,929 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEducation
+2013-01-26 09:06:14,929 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEducation on table Driver_Education
+2013-01-26 09:06:14,932 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEmployment
+2013-01-26 09:06:14,932 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEmployment on table Driver_Employment
+2013-01-26 09:06:14,947 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverBackgroundCheck
+2013-01-26 09:06:14,948 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverBackgroundCheck on table Driver_BackGround_Check
+2013-01-26 09:06:16,507 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AreaMaster.driverAddresses -> Driver_Address
+2013-01-26 09:06:16,508 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverAddresses -> Driver_Address
+2013-01-26 09:06:16,508 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverContacts -> Driver_Contact
+2013-01-26 09:06:16,508 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverEducations -> Driver_Education
+2013-01-26 09:06:16,508 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.ContactTypeMaster.driverContacts -> Driver_Contact
+2013-01-26 09:06:16,508 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AddressTypeMaster.driverAddresses -> Driver_Address
+2013-01-26 09:06:16,528 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:06:16,528 INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:06:16,547 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:06:16,563 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:06:17,532 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:06:17,532 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:06:17,577 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:06:17,592 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:06:17,598 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:06:17,598 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:06:17,598 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:06:17,600 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:06:17,601 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:06:17,601 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:06:17,609 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:06:17,609 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:06:17,610 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:06:17,610 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:06:17,610 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:06:17,610 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:06:17,624 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:06:17,624 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:06:17,625 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:06:17,626 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:06:17,626 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:06:17,777 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:06:19,562 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:06:20,531 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@9f088] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:06:21,193 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:06:21,194 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:06:21,349 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:06:21,349 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:06:21,349 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:06:21,350 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:06:21,350 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:06:21,350 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:06:21,351 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:06:21,351 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:06:21,352 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:06:21,379 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:06:21,379 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:06:21,382 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@156b18c] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:06:44,037 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14c1f1e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@14c1f1e]; startup date [Sat Jan 26 09:06:44 IST 2013]; root of context hierarchy
+2013-01-26 09:06:44,038 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:06:44,067 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:06:44,119 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:06:44,171 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:06:44,216 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@14c1f1e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@ab1af1
+2013-01-26 09:06:44,219 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:06:44,238 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:06:44,244 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ab1af1: defining beans [carrental.propertyConfigurer,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,org.springframework.aop.config.internalAutoProxyCreator,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:06:44,292 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:06:44,292 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:06:44,339 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:06:44,339 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:06:44,339 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:06:44,339 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:06:44,339 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:06:44,339 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:06:44,339 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:06:44,339 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:06:44,340 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:06:44,340 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:06:44,341 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:06:44,341 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:06:44,341 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:06:44,341 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:06:44,363 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:06:44,364 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:06:44,382 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1e85cd3] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:07:08,916 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] SET ROWCOUNT 250 SELECT driver_master_Id, driver_master_ShortName, driver_master_Name  FROM car_rental..driver_master WHERE UPPER(driver_master_ShortName) = UPPER('A') 
+2013-01-26 09:07:09,889 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1193, SQLState: HY000
+2013-01-26 09:07:09,889 ERROR [org.hibernate.util.JDBCExceptionReporter] Unknown system variable 'ROWCOUNT'
+2013-01-26 09:07:09,938 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-01-26 09:07:10,121 INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2013-01-26 09:07:10,163 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] *** Maybe it is not a custom table. New attempt by considering table as containing _ID and _NAME columns. ***
+
+2013-01-26 09:07:10,163 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] SET ROWCOUNT 250 SELECT driver_master_Id, driver_master_Name, driver_master_Name  FROM car_rental..driver_master WHERE UPPER(driver_master_Name) = UPPER('A') 
+2013-01-26 09:07:10,168 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1193, SQLState: HY000
+2013-01-26 09:07:10,168 ERROR [org.hibernate.util.JDBCExceptionReporter] Unknown system variable 'ROWCOUNT'
+2013-01-26 09:07:10,168 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] *** Maybe it is not a table with _ID and _NAME. New attempt by considering table as containing _ID and _SHORTNAME columns. ***
+
+2013-01-26 09:07:10,169 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] SET ROWCOUNT 250 SELECT driver_master_Id, driver_master_ShortName, driver_master_ShortName  FROM car_rental..driver_master WHERE UPPER(driver_master_ShortName) = UPPER('A') 
+2013-01-26 09:07:10,171 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1193, SQLState: HY000
+2013-01-26 09:07:10,171 ERROR [org.hibernate.util.JDBCExceptionReporter] Unknown system variable 'ROWCOUNT'
+2013-01-26 09:24:19,322 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1193, SQLState: HY000
+2013-01-26 09:24:19,322 ERROR [org.hibernate.util.JDBCExceptionReporter] Unknown system variable 'ROWCOUNT'
+2013-01-26 09:24:19,364 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] *** Maybe the input column name or output column name is not correct.Hence No result is fetched ***
+
+2013-01-26 09:24:19,364 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] done
+2013-01-26 09:42:57,807 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8691d8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@8691d8]; startup date [Sat Jan 26 09:42:57 IST 2013]; root of context hierarchy
+2013-01-26 09:42:57,999 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [CarRentalPersistenceContext.xml]
+2013-01-26 09:42:58,368 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:42:58,538 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:42:58,782 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/services/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:42:59,058 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:42:59,123 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:42:59,213 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'carrental.propertyConfigurer': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]]
+2013-01-26 09:42:59,217 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:42:59,266 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:42:59,320 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@8691d8]: org.springframework.beans.factory.support.DefaultListableBeanFactory@13b32d
+2013-01-26 09:42:59,825 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:42:59,880 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:42:59,988 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13b32d: defining beans [carrental.DriverMasterDao,carrental.DriverContactDao,carrental.DriverAddressDao,carrental.DriverEducationDao,carrental.DriverEmploymentDao,carrental.DriverBackgroundCheckDao,carrental.propertyConfigurer,carrental.dataSource,carrental.dataSource.local,carrental.hibernateProperties,carrental.transactionManager,carrental.hibernateTemplate,carrental.txAdvice,carrental.mappingResourcesList,carrental.mappingResources,carrental.sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,carrental.DriverService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,DriverService,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:43:01,397 INFO  [org.hibernate.cfg.annotations.Version] Hibernate Annotations 3.3.0.GA
+2013-01-26 09:43:01,427 INFO  [org.hibernate.cfg.Environment] Hibernate 3.2.5
+2013-01-26 09:43:01,438 INFO  [org.hibernate.cfg.Environment] hibernate.properties not found
+2013-01-26 09:43:01,443 INFO  [org.hibernate.cfg.Environment] Bytecode provider name : cglib
+2013-01-26 09:43:01,456 INFO  [org.hibernate.cfg.Environment] using JDK 1.4 java.sql.Timestamp handling
+2013-01-26 09:43:03,281 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AreaMaster
+2013-01-26 09:43:03,407 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AreaMaster on table Area_Master
+2013-01-26 09:43:03,648 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverMaster
+2013-01-26 09:43:03,648 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverMaster on table driver_master
+2013-01-26 09:43:03,681 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverContact
+2013-01-26 09:43:03,682 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverContact on table Driver_Contact
+2013-01-26 09:43:03,705 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.ContactTypeMaster
+2013-01-26 09:43:03,705 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.ContactTypeMaster on table Contact_Type_Master
+2013-01-26 09:43:03,711 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverAddress
+2013-01-26 09:43:03,711 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverAddress on table Driver_Address
+2013-01-26 09:43:03,714 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AddressTypeMaster
+2013-01-26 09:43:03,714 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AddressTypeMaster on table Address_Type_Master
+2013-01-26 09:43:03,718 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEducation
+2013-01-26 09:43:03,718 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEducation on table Driver_Education
+2013-01-26 09:43:03,722 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEmployment
+2013-01-26 09:43:03,722 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEmployment on table Driver_Employment
+2013-01-26 09:43:03,736 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverBackgroundCheck
+2013-01-26 09:43:03,736 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverBackgroundCheck on table Driver_BackGround_Check
+2013-01-26 09:43:03,910 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AreaMaster.driverAddresses -> Driver_Address
+2013-01-26 09:43:03,910 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverAddresses -> Driver_Address
+2013-01-26 09:43:03,910 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverContacts -> Driver_Contact
+2013-01-26 09:43:03,911 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverEducations -> Driver_Education
+2013-01-26 09:43:03,911 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.ContactTypeMaster.driverContacts -> Driver_Contact
+2013-01-26 09:43:03,911 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AddressTypeMaster.driverAddresses -> Driver_Address
+2013-01-26 09:43:04,050 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:43:04,050 INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:43:04,069 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:43:04,340 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:43:05,887 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:43:05,887 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:43:06,051 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:43:06,065 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:43:06,070 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:43:06,070 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:43:06,070 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:43:06,072 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:43:06,072 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:43:06,072 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:43:06,072 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:43:06,072 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:43:06,072 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:43:06,072 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:43:06,073 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:43:06,073 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:43:06,080 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:43:06,080 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:43:06,080 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:43:06,080 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:43:06,080 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:43:06,080 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:43:06,093 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:43:06,093 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:43:06,093 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:43:06,094 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:43:06,095 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:43:06,188 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:43:07,349 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:43:08,042 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1e5cc5e] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:43:08,405 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:43:08,406 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:43:08,491 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:43:08,491 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:43:08,491 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:43:08,492 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:43:08,492 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:43:08,492 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:43:08,492 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:43:08,493 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:43:08,518 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:43:08,518 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:43:08,523 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1145c50] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:43:08,867 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@893880: display name [org.springframework.context.support.ClassPathXmlApplicationContext@893880]; startup date [Sat Jan 26 09:43:08 IST 2013]; root of context hierarchy
+2013-01-26 09:43:08,868 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:43:08,900 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:43:08,957 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:43:08,990 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:43:09,042 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@893880]: org.springframework.beans.factory.support.DefaultListableBeanFactory@17b8a46
+2013-01-26 09:43:09,045 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:43:09,047 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:43:09,053 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17b8a46: defining beans [carrental.propertyConfigurer,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,org.springframework.aop.config.internalAutoProxyCreator,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:43:09,083 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:43:09,083 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:43:09,114 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:43:09,114 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:43:09,114 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:43:09,115 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:43:09,115 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:43:09,115 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:43:09,115 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:43:09,116 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:43:09,143 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:43:09,143 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:43:09,162 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1ad5655] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:43:11,081 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1193, SQLState: HY000
+2013-01-26 09:43:11,081 ERROR [org.hibernate.util.JDBCExceptionReporter] Unknown system variable 'ROWCOUNT'
+2013-01-26 09:43:11,108 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-01-26 09:43:11,260 INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2013-01-26 09:43:11,312 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] *** Maybe the input column name or output column name is not correct.Hence No result is fetched ***
+
+2013-01-26 09:43:11,312 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] done
+2013-01-26 09:44:23,975 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1193, SQLState: HY000
+2013-01-26 09:44:23,977 ERROR [org.hibernate.util.JDBCExceptionReporter] Unknown system variable 'ROWCOUNT'
+2013-01-26 09:44:24,034 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] *** Maybe the input column name or output column name is not correct.Hence No result is fetched ***
+
+2013-01-26 09:44:24,036 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] done
+2013-01-26 09:51:35,077 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@84a08c: display name [org.springframework.context.support.ClassPathXmlApplicationContext@84a08c]; startup date [Sat Jan 26 09:51:35 IST 2013]; root of context hierarchy
+2013-01-26 09:51:35,363 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [CarRentalPersistenceContext.xml]
+2013-01-26 09:51:35,782 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:51:35,929 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:51:36,138 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/services/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:51:36,295 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:51:36,356 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:51:36,410 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'carrental.propertyConfigurer': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]]
+2013-01-26 09:51:36,416 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:51:36,439 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:51:36,473 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@84a08c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@4a5625
+2013-01-26 09:51:36,849 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:51:36,858 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:51:36,970 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4a5625: defining beans [carrental.DriverMasterDao,carrental.DriverContactDao,carrental.DriverAddressDao,carrental.DriverEducationDao,carrental.DriverEmploymentDao,carrental.DriverBackgroundCheckDao,carrental.propertyConfigurer,carrental.dataSource,carrental.dataSource.local,carrental.hibernateProperties,carrental.transactionManager,carrental.hibernateTemplate,carrental.txAdvice,carrental.mappingResourcesList,carrental.mappingResources,carrental.sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,carrental.DriverService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,DriverService,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:51:38,321 INFO  [org.hibernate.cfg.annotations.Version] Hibernate Annotations 3.3.0.GA
+2013-01-26 09:51:38,347 INFO  [org.hibernate.cfg.Environment] Hibernate 3.2.5
+2013-01-26 09:51:38,358 INFO  [org.hibernate.cfg.Environment] hibernate.properties not found
+2013-01-26 09:51:38,362 INFO  [org.hibernate.cfg.Environment] Bytecode provider name : cglib
+2013-01-26 09:51:38,374 INFO  [org.hibernate.cfg.Environment] using JDK 1.4 java.sql.Timestamp handling
+2013-01-26 09:51:40,323 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AreaMaster
+2013-01-26 09:51:40,437 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AreaMaster on table Area_Master
+2013-01-26 09:51:40,653 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverMaster
+2013-01-26 09:51:40,654 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverMaster on table driver_master
+2013-01-26 09:51:40,685 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverContact
+2013-01-26 09:51:40,685 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverContact on table Driver_Contact
+2013-01-26 09:51:40,708 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.ContactTypeMaster
+2013-01-26 09:51:40,709 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.ContactTypeMaster on table Contact_Type_Master
+2013-01-26 09:51:40,713 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverAddress
+2013-01-26 09:51:40,713 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverAddress on table Driver_Address
+2013-01-26 09:51:40,717 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AddressTypeMaster
+2013-01-26 09:51:40,717 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AddressTypeMaster on table Address_Type_Master
+2013-01-26 09:51:40,719 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEducation
+2013-01-26 09:51:40,720 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEducation on table Driver_Education
+2013-01-26 09:51:40,723 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEmployment
+2013-01-26 09:51:40,723 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEmployment on table Driver_Employment
+2013-01-26 09:51:40,735 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverBackgroundCheck
+2013-01-26 09:51:40,735 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverBackgroundCheck on table Driver_BackGround_Check
+2013-01-26 09:51:41,028 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AreaMaster.driverAddresses -> Driver_Address
+2013-01-26 09:51:41,028 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverAddresses -> Driver_Address
+2013-01-26 09:51:41,029 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverContacts -> Driver_Contact
+2013-01-26 09:51:41,029 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverEducations -> Driver_Education
+2013-01-26 09:51:41,030 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.ContactTypeMaster.driverContacts -> Driver_Contact
+2013-01-26 09:51:41,030 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AddressTypeMaster.driverAddresses -> Driver_Address
+2013-01-26 09:51:41,049 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:51:41,049 INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:51:41,061 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:51:41,074 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:51:41,727 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:51:41,727 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:51:41,775 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:51:41,789 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:51:41,798 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:51:41,799 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:51:41,799 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:51:41,800 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:51:41,800 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:51:41,800 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:51:41,801 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:51:41,801 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:51:41,801 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:51:41,801 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:51:41,801 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:51:41,801 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:51:41,807 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:51:41,807 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:51:41,807 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:51:41,807 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:51:41,807 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:51:41,807 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:51:41,822 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:51:41,823 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:51:41,823 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:51:41,824 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:51:41,824 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:51:41,929 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:51:42,906 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:51:43,597 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@d86a4b] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:51:43,915 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:51:43,916 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:51:43,983 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:51:43,983 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:51:43,983 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:51:43,983 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:51:43,983 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:51:43,983 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:51:43,984 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:51:43,984 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:51:43,985 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:51:44,013 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:51:44,013 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:51:44,017 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@9756a5] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:51:44,326 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@f44267: display name [org.springframework.context.support.ClassPathXmlApplicationContext@f44267]; startup date [Sat Jan 26 09:51:44 IST 2013]; root of context hierarchy
+2013-01-26 09:51:44,326 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:51:44,359 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:51:44,425 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:51:44,455 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:51:44,502 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@f44267]: org.springframework.beans.factory.support.DefaultListableBeanFactory@c9b50b
+2013-01-26 09:51:44,505 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:51:44,507 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:51:44,512 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c9b50b: defining beans [carrental.propertyConfigurer,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,org.springframework.aop.config.internalAutoProxyCreator,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:51:44,533 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:51:44,534 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:51:44,562 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:51:44,562 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:51:44,562 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:51:44,562 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:51:44,562 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:51:44,562 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:51:44,562 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:51:44,562 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:51:44,563 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:51:44,563 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:51:44,564 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:51:44,564 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:51:44,564 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:51:44,588 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:51:44,589 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:51:44,606 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@c2361e] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:51:53,201 WARN  [org.hibernate.util.JDBCExceptionReporter] SQL Error: 1064, SQLState: 42000
+2013-01-26 09:51:53,201 ERROR [org.hibernate.util.JDBCExceptionReporter] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.driver_master WHERE UPPER(Driver_Fullname) LIKE UPPER('A%')' at line 1
+2013-01-26 09:51:53,306 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] *** Maybe the input column name or output column name is not correct.Hence No result is fetched ***
+
+2013-01-26 09:51:53,306 INFO  [com.company.customrequest.services.core.service.CustomRequestServiceImpl] done
+2013-01-26 09:56:23,802 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14bfa4d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@14bfa4d]; startup date [Sat Jan 26 09:56:23 IST 2013]; root of context hierarchy
+2013-01-26 09:56:24,016 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [CarRentalPersistenceContext.xml]
+2013-01-26 09:56:24,311 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:56:24,441 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:56:24,612 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/carrental/services/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:56:24,739 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:56:24,776 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:56:24,876 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Overriding bean definition for bean 'carrental.propertyConfigurer': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/carrental/database/ctx/common/ApplicationContext-Persistence.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=singleton; abstract=false; lazyInit=false; autowireCandidate=true; autowireMode=0; dependencyCheck=0; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]]
+2013-01-26 09:56:24,888 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:56:24,919 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:56:25,023 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@14bfa4d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@b80297
+2013-01-26 09:56:25,388 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:56:25,401 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:56:25,547 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b80297: defining beans [carrental.DriverMasterDao,carrental.DriverContactDao,carrental.DriverAddressDao,carrental.DriverEducationDao,carrental.DriverEmploymentDao,carrental.DriverBackgroundCheckDao,carrental.propertyConfigurer,carrental.dataSource,carrental.dataSource.local,carrental.hibernateProperties,carrental.transactionManager,carrental.hibernateTemplate,carrental.txAdvice,carrental.mappingResourcesList,carrental.mappingResources,carrental.sessionFactory,org.springframework.aop.config.internalAutoProxyCreator,carrental.DriverService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,DriverService,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:56:26,605 INFO  [org.hibernate.cfg.annotations.Version] Hibernate Annotations 3.3.0.GA
+2013-01-26 09:56:26,631 INFO  [org.hibernate.cfg.Environment] Hibernate 3.2.5
+2013-01-26 09:56:26,643 INFO  [org.hibernate.cfg.Environment] hibernate.properties not found
+2013-01-26 09:56:26,646 INFO  [org.hibernate.cfg.Environment] Bytecode provider name : cglib
+2013-01-26 09:56:26,656 INFO  [org.hibernate.cfg.Environment] using JDK 1.4 java.sql.Timestamp handling
+2013-01-26 09:56:28,449 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AreaMaster
+2013-01-26 09:56:28,561 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AreaMaster on table Area_Master
+2013-01-26 09:56:28,771 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverMaster
+2013-01-26 09:56:28,772 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverMaster on table driver_master
+2013-01-26 09:56:28,801 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverContact
+2013-01-26 09:56:28,802 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverContact on table Driver_Contact
+2013-01-26 09:56:28,822 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.ContactTypeMaster
+2013-01-26 09:56:28,822 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.ContactTypeMaster on table Contact_Type_Master
+2013-01-26 09:56:28,827 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverAddress
+2013-01-26 09:56:28,828 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverAddress on table Driver_Address
+2013-01-26 09:56:28,832 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.AddressTypeMaster
+2013-01-26 09:56:28,832 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.AddressTypeMaster on table Address_Type_Master
+2013-01-26 09:56:28,836 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEducation
+2013-01-26 09:56:28,837 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEducation on table Driver_Education
+2013-01-26 09:56:28,842 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverEmployment
+2013-01-26 09:56:28,842 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverEmployment on table Driver_Employment
+2013-01-26 09:56:28,852 INFO  [org.hibernate.cfg.AnnotationBinder] Binding entity from annotated class: com.company.carrental.data.pojo.DriverBackgroundCheck
+2013-01-26 09:56:28,852 INFO  [org.hibernate.cfg.annotations.EntityBinder] Bind entity com.company.carrental.data.pojo.DriverBackgroundCheck on table Driver_BackGround_Check
+2013-01-26 09:56:29,034 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AreaMaster.driverAddresses -> Driver_Address
+2013-01-26 09:56:29,034 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverAddresses -> Driver_Address
+2013-01-26 09:56:29,034 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverContacts -> Driver_Contact
+2013-01-26 09:56:29,035 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.DriverMaster.driverEducations -> Driver_Education
+2013-01-26 09:56:29,035 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.ContactTypeMaster.driverContacts -> Driver_Contact
+2013-01-26 09:56:29,035 INFO  [org.hibernate.cfg.annotations.CollectionBinder] Mapping collection: com.company.carrental.data.pojo.AddressTypeMaster.driverAddresses -> Driver_Address
+2013-01-26 09:56:29,055 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:56:29,055 INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:56:29,069 INFO  [org.hibernate.cfg.AnnotationConfiguration] Hibernate Validator not found: ignoring
+2013-01-26 09:56:29,083 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:56:29,659 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:56:29,659 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:56:29,698 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:56:29,711 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:56:29,716 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:56:29,717 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:56:29,717 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:56:29,719 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:56:29,719 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:56:29,719 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:56:29,719 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:56:29,719 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:56:29,719 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:56:29,719 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:56:29,720 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:56:29,720 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:56:29,725 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:56:29,726 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:56:29,726 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:56:29,726 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:56:29,726 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:56:29,726 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:56:29,739 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:56:29,739 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:56:29,739 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:56:29,742 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:56:29,742 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:56:29,827 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:56:30,681 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:56:31,187 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@1986654] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:56:31,482 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:56:31,482 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:56:31,517 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:56:31,517 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:56:31,517 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:56:31,518 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:56:31,518 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:56:31,518 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:56:31,518 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:56:31,518 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:56:31,519 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:56:31,519 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:56:31,520 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:56:31,520 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:56:31,520 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:56:31,520 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:56:31,543 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:56:31,543 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:56:31,548 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@8565f4] of Hibernate SessionFactory for HibernateTransactionManager
+2013-01-26 09:56:31,835 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@8075a4: display name [org.springframework.context.support.ClassPathXmlApplicationContext@8075a4]; startup date [Sat Jan 26 09:56:31 IST 2013]; root of context hierarchy
+2013-01-26 09:56:31,836 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [custom-request-servicesPersistenceContext.xml]
+2013-01-26 09:56:31,864 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-Persistence.xml]
+2013-01-26 09:56:31,905 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/ctx/common/ApplicationContext-DAO.xml]
+2013-01-26 09:56:31,929 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [com/company/customrequest/services/database/service/ctx/common/ApplicationContext-Services.xml]
+2013-01-26 09:56:31,960 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@8075a4]: org.springframework.beans.factory.support.DefaultListableBeanFactory@aa548
+2013-01-26 09:56:31,966 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from class path resource [jtds.carrental.properties]
+2013-01-26 09:56:31,969 INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] Loading properties file from URL [file:config/apps/conf.properties]
+2013-01-26 09:56:31,973 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@aa548: defining beans [carrental.propertyConfigurer,customRequest.dataSource,customRequest.dataSource.local,customRequest.hibernateProperties,customRequest.sessionFactory,customRequest.transactionManager,customRequest.txAdvice,CustomRequestDao,customRequest.services.propertyConfigurer,org.springframework.aop.config.internalAutoProxyCreator,customrequest.CustomRequestService,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,CustomRequestService]; root of factory hierarchy
+2013-01-26 09:56:31,996 INFO  [org.springframework.orm.hibernate3.LocalSessionFactoryBean] Building new Hibernate SessionFactory
+2013-01-26 09:56:31,997 INFO  [org.hibernate.connection.ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2013-01-26 09:56:32,030 INFO  [org.hibernate.cfg.SettingsFactory] RDBMS: MySQL, version: 5.5.23
+2013-01-26 09:56:32,030 INFO  [org.hibernate.cfg.SettingsFactory] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.8 ( Revision: ${svn.Revision} )
+2013-01-26 09:56:32,030 INFO  [org.hibernate.dialect.Dialect] Using dialect: org.hibernate.dialect.SybaseDialect
+2013-01-26 09:56:32,030 INFO  [org.hibernate.transaction.TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+2013-01-26 09:56:32,030 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2013-01-26 09:56:32,030 INFO  [org.hibernate.cfg.SettingsFactory] Automatic flush during beforeCompletion(): enabled
+2013-01-26 09:56:32,030 INFO  [org.hibernate.cfg.SettingsFactory] Automatic session close at end of transaction: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Scrollable result sets: enabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Connection release mode: after_statement
+2013-01-26 09:56:32,031 WARN  [org.hibernate.cfg.SettingsFactory] Overriding release mode as connection provider does not support 'after_statement'
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Default batch fetch size: 1
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Generate SQL with comments: enabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL updates by primary key: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Order SQL inserts for batching: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Query translator: org.hibernate.hql.classic.ClassicQueryTranslatorFactory
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Query language substitutions: {false='N', true='Y'}
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] JPA-QL strict compliance: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Second-level cache: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Query cache: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Optimize cache for minimal puts: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Structured second-level cache entries: disabled
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Echoing all SQL to stdout
+2013-01-26 09:56:32,031 INFO  [org.hibernate.cfg.SettingsFactory] Statistics: disabled
+2013-01-26 09:56:32,032 INFO  [org.hibernate.cfg.SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+2013-01-26 09:56:32,032 INFO  [org.hibernate.cfg.SettingsFactory] Default entity-mode: pojo
+2013-01-26 09:56:32,032 INFO  [org.hibernate.cfg.SettingsFactory] Named query checking : enabled
+2013-01-26 09:56:32,052 INFO  [org.hibernate.impl.SessionFactoryImpl] building session factory
+2013-01-26 09:56:32,053 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+2013-01-26 09:56:32,069 INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] Using DataSource [org.apache.commons.dbcp.BasicDataSource@bcf8f7] of Hibernate SessionFactory for HibernateTransactionManager

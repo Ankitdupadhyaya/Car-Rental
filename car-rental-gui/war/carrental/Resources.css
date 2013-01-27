@@ -1,0 +1,649 @@
+* {
+  font-family: arial, helvetica, tahoma, sans-serif;
+}
+
+.x-theme-slate #demo-header {
+  background: #1E4176 url(images/bg/slate-hd-bg.gif) repeat-x scroll 0pt;
+}
+
+.drag-ok {
+  border: 1px solid green !important;
+  background-color: #e6eae7;
+}
+
+/* chooser */
+#img-chooser-dlg .details {
+  padding: 10px;
+  text-align: center;
+}
+
+#img-chooser-dlg .details-info {
+  border-top: 1px solid #cccccc;
+  font: 11px Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+#img-chooser-dlg .details-info b {
+  color: #555555;
+  display: block;
+  margin-bottom: 4px;
+}
+
+#img-chooser-dlg .details-info span {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#img-chooser-view {
+  background: white;
+  font: 11px Arial, Helvetica, sans-serif;
+}
+
+#img-chooser-view .thumb {
+  background: #dddddd;
+  padding: 3px;
+}
+
+#img-chooser-view .thumb img {
+  height: 60px;
+  width: 80px;
+}
+
+#img-chooser-view .thumb-wrap {
+  float: left;
+  margin: 4px;
+  margin-right: 0;
+  padding: 5px;
+}
+
+#img-chooser-view .thumb-wrap span {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+
+#img-chooser-view .x-view-over {
+  border: 1px solid #dddddd;
+  background: #efefef repeat-x left top;
+  padding: 4px;
+}
+
+#img-chooser-view .x-view-selected {
+  background: #DFEDFF;
+  border: 1px solid #6593cf;
+  padding: 4px;
+}
+
+#img-chooser-view .x-view-selected .thumb {
+  background: transparent;
+}
+
+#img-chooser-view .x-view-selected span {
+  color: #1A4D8F;
+}
+
+#img-chooser-view .loading-indicator {
+  font-size: 11px;
+  background-image: url('../../resources/images/grid/loading.gif');
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+/* list view */
+#images-view .x-panel-body {
+  background: white;
+  font: 11px Arial, Helvetica, sans-serif;
+}
+
+#images-view .thumb {
+  background: #dddddd;
+  padding: 3px;
+}
+
+#images-view .thumb img {
+  height: 60px;
+  width: 80px;
+}
+
+#images-view .thumb-wrap {
+  float: left;
+  margin: 4px;
+  margin-right: 0;
+  padding: 5px;
+}
+
+#images-view .thumb-wrap span {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+
+#images-view .x-view-over {
+  border: 1px solid #dddddd;
+  background: #efefef url(images/default/grid/row-over.gif) repeat-x left top;
+  padding: 4px;
+}
+
+#images-view .x-view-selected {
+  background: #eff5fb no-repeat right bottom;
+  border: 1px solid #99bbe8;
+  padding: 4px;
+}
+
+#images-view .x-view-selected .thumb {
+  background: transparent;
+}
+
+#images-view .loading-indicator {
+  font-size: 11px;
+  background-image: url('resources/images/default/grid/loading.gif');
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+/* totals grid */
+.x-grid3-body .x-grid3-td-cost {
+  background-color: #F1F2F4;
+}
+
+.x-grid3-summary-row {
+  background: Transparent;
+  border-collapse: collapse;
+  border-right: 1px solid groove !important; 
+  border-bottom: 1px solid groove !important; 
+  border-top: 0px solid groove !important;  
+  color: Automatic;
+  cursor: text;   
+  font-family: arial, helvetica, tahoma, sans-serif;
+  text-align: left;
+  margin: 0px; 
+  padding: 0;
+}
+
+.x-grid3-summary-row .x-grid3-cell-inner {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.x-grid3-cell-inner {
+  font-family: "segoe ui", tahoma, arial, sans-serif;
+}
+
+#demo-header {
+  background: #1E4176 url(images/bg/hd-bg.gif) repeat-x scroll 0pt;
+  border: 0pt none;
+  padding-left: 3px;
+}
+
+#demo-theme {
+  float: right;
+  padding-top: 5px;
+  padding-right: 8px;
+}
+
+#demo-title {
+  color: white;
+  font-family: tahoma, arial, sans-serif;
+  font-size: 16px;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: normal;
+  padding: 6 0 8 6px;
+}
+
+.sample-box {
+  float: left;
+  width: 135px;
+  margin: 0 5px;
+  text-align: center;
+  height: 114px;
+  cursor: default;
+  color: #444;
+  overflow: hidden;
+}
+
+.sample-over {
+  background: transparent url(images/thumbs/sample-over.gif) no-repeat;
+}
+
+.sample-over div {
+  color: #1860A8;
+}
+
+.sample-box img {
+  width: 120px;
+  height: 90px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+.sample-box div,#sample-box div a {
+  font-size: 10px;
+  line-height: 12px;
+  font-family: tahoma, arial, sans-serif;
+}
+
+.sample-box dt a {
+  border: 0 none !important;
+}
+
+.x-view-over {
+  background: #EFEFEF url(images/default/grid/row-over.gif) repeat-x scroll left top;
+  border: 1px solid #DDDDDD;
+  padding: 4px;
+}
+
+.x-view-selected {
+  border: 1px solid #99BBE8;
+  padding: 4px;
+}
+
+.x-view-selected .thumb {
+  background: transparent none repeat scroll 0%;
+}
+
+
+.txt-green {
+  color: green;
+}
+
+.txt-red {
+  color: red;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.pad-text {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.x-grid3-row-body p {
+  margin: 5px 5px 10px 5px !important;
+}
+
+.icon-app-side {
+  background: url(images/icons/application_side_list.png) no-repeat center left !important;
+}
+
+.icon-calendar {
+  background: url(images/icons/calendar.gif) no-repeat center left !important;
+}
+
+.icon-list-items {
+  background: url(images/icons/list-items.gif) no-repeat center left !important;
+}
+
+.icon-menu-show {
+  background: url(images/icons/menu-show.gif) no-repeat center left !important;
+}
+
+.icon-user-add {
+  background: url(images/icons/fam/user_add.gif) no-repeat center left !important;
+}
+
+.icon-user-delete {
+  background: url(images/icons/fam/user_delete.gif) no-repeat center left !important;
+}
+
+.icon-connect {
+  background: url(images/icons/fam/connect.gif) no-repeat center left !important;
+}
+
+.icon-accordion {
+  background: url(images/icons/accordion.gif) no-repeat center left !important;
+}
+
+.icon-link {
+  background: url(images/icons/fam/icon_link.gif) no-repeat center left !important;
+}
+
+.icon-alert {
+  background: url(images/icons/fam/icon_alert.gif) no-repeat center left !important;
+}
+
+.icon-save{
+  background: url(images/icons/save.png) no-repeat center left !important;
+}
+
+.icon-bullet-save{
+  background: url(images/icons/fam/bullet-save.png) no-repeat center left !important;
+}
+
+.icon-save-all{
+  background: url(images/icons/save-all.png) no-repeat center left !important;
+}
+
+.user {
+  background: url(images/icons/fam/user.gif) no-repeat center left !important;
+}
+
+.user-add {
+  background: url(images/icons/fam/user_add.gif) no-repeat center left !important;
+}
+
+.user-delete {
+  background: url(images/icons/fam/user_delete.gif) no-repeat center left !important;
+}
+
+.connect {
+  background: url(images/icons/fam/connect.gif) no-repeat center left !important;
+}
+
+.user-girl {
+  background: url(images/icons/fam/user_female.gif) no-repeat center left !important;
+}
+
+.user-kid {
+  background: url(images/icons/fam/user_green.gif) no-repeat center left !important;
+}
+
+.user-suit {
+  background: url(images/icons/fam/user_suit.gif) no-repeat center left !important;
+}
+
+.user-gray {
+  background: url(images/icons/fam/user_gray.png) no-repeat center left !important;
+}
+
+.user-orange {
+  background: url(images/icons/fam/user_orange.png) no-repeat center left !important;
+}
+
+.user-red {
+  background: url(images/icons/fam/user_red.png) no-repeat center left !important;
+}
+
+.icon-filter {
+  background: url(images/icons/funnel.png) no-repeat center left !important;
+}
+
+.icon-form {
+  background: url(images/icons/application_form.png) no-repeat center left !important;
+}
+
+.icon-add {
+  background: url(images/icons/add.gif) no-repeat center left !important;
+}
+
+.icon-plugin {
+  background: url(images/icons/plugin.png) no-repeat center left !important;
+}
+
+.icon-table {
+  background: url(images/icons/table.png) no-repeat center left !important;
+}
+
+.icon-delete {
+  background: url(images/icons/delete.gif) no-repeat center left !important;
+}
+
+.icon-email {
+  background: url(images/icons/email.png) no-repeat center left !important;
+}
+
+.icon-email-add {
+  background: url(images/icons/email_add.png) no-repeat center left !important;
+}
+
+.icon-email-reply {
+  background: url(images/icons/email_go.png) no-repeat center left !important;
+}
+
+.icon-date-add {
+  background: url(images/icons/date-add.png) no-repeat center left !important;
+}
+
+.icon-contact {
+  background: url(images/icons/vcard.png) no-repeat center left !important;
+}
+
+.icon-contact-add {
+  background: url(images/icons/vcard_add.png) no-repeat center left !important;
+}
+
+.icon-shell {
+  background: url(images/icons/shell.gif) no-repeat center left !important;
+}
+
+.icon-page {
+  background: url(images/icons/document.gif) no-repeat center left !important;
+}
+
+.icon-page-java {
+  background: url(images/icons/page_white_cup.png) no-repeat center left !important;
+}
+
+.icon-page-html {
+  background: url(images/icons/page_white_code.png) no-repeat center left !important;
+}
+
+.icon-album {
+  background: url(images/icons/album.gif) no-repeat center left !important;
+}
+
+.icon-text {
+  background: url(images/icons/text.gif) no-repeat center left !important;
+}
+
+.icon-add-disabled {
+  background: url(images/icons/add.gif) no-repeat center left !important;
+}
+
+.icon-chart {
+  background: url(images/icons/chart.png) no-repeat center left !important;
+}
+
+.icon-list {
+  background: url(images/icons/list.gif) no-repeat center left !important;
+}
+
+.icon-feed {
+  background: url(images/icons/feed.gif) no-repeat center left !important;
+}
+
+.icon-info {
+  background: url(images/icons/information.png) no-repeat center left !important;
+}
+
+.icon-info-white {
+  background: url(images/icons/information-white.gif) no-repeat center left !important;
+}
+
+.icon-music {
+  background: url(images/icons/music.png) no-repeat center left !important;
+}
+
+.icon-printer {
+  background: url(images/icons/printer.png) no-repeat center left !important;
+}
+
+.icon-page-code {
+  background: url(images/icons/page.png) no-repeat 0 50% !important;
+}
+
+.icon-search {
+  background: url(images/icons/loupe.gif) no-repeat center left !important;
+}
+
+.icon-search2 {
+  background: url(images/icons/loupe2.gif) no-repeat center left !important;
+}
+
+.icon-switch {
+  background: url(images/icons/change.gif) no-repeat center left !important;
+}
+
+.icon-table-refresh {
+  background: url(images/icons/fam/table_refresh.png) no-repeat center left !important;     
+}
+
+.icon-remove {
+  background: url(images/icons/fam/cross.gif) no-repeat center left !important;    	
+}
+
+.icon-accept {
+  background: url(images/icons/fam/accept.png) no-repeat center left !important;    	
+}
+
+.icon-login {
+  background: url(images/icons/fam/login.png) no-repeat center left !important;
+}
+
+.icon-logout {
+  background: url(images/icons/fam/logout.png) no-repeat center left !important;    	
+}
+
+.icon-new {
+  background: url(images/icons/new.png) no-repeat center left !important;
+}
+
+.icon-table-save {
+  background: url(images/icons/fam/table_save.png) no-repeat center left !important;  
+}
+
+.icon-table-delete {
+  background: url(images/icons/fam/table_delete.png) no-repeat center left !important;   
+}
+
+.icon-table-exportPDF {
+  background: url(images/icons/fam/export-pdf.gif) no-repeat center left !important;   
+}
+
+.icon-table-exportEXCEL {
+  background: url(images/icons/fam/exportEXCEL.png) no-repeat center left !important;   
+}
+
+.icon-table-exportTML {
+  background: url(images/icons/fam/xml.png) no-repeat center left !important;   
+}
+
+.icon-table-edit {
+  background: url(images/icons/table_edit.png) no-repeat center left !important; 	
+}
+
+.icon-tabs {
+  background: url(images/icons/tabs.gif) no-repeat center left !important;
+}
+
+.application_form_edit {
+  background: url(images/icons/edit_form.png) no-repeat center left !important;
+}
+
+.database_add {
+  background: url(images/icons/fam/database_add.png) no-repeat center left !important;
+}
+
+.database_delete {
+  background: url(images/icons/fam/database_delete.png) no-repeat center left !important;
+}
+
+.database_save {
+  background: url(images/icons/fam/database_save.png) no-repeat center left !important;
+}
+
+.information {
+  background: url(images/icons/fam/information.gif) no-repeat center left !important;
+}
+
+.logo-cib {
+	background: url(images/cib.png) no-repeat center left !important;
+}
+
+.logo-cib-bar{
+	background: url(images/barrelogo.png) center left !important;
+	background-repeat: repeat-x ;
+}
+
+.yellow {
+   background-color: #FFFF99; !important;
+}
+.grey {
+   background-color: #CCCCCC; !important;
+}
+.red  {
+   background-color: #CC0000; !important;
+} 
+.lightblue  {
+   background-color: #CCFFFF; !important;
+}
+
+.green {
+   background-color: #A1FF99; !important;
+}
+
+.red-text .x-grid3-cell-inner{
+   color: #CC0000; !important;
+}
+
+.criteria_clear {
+  background: url(images/icons/fam/cog.png) no-repeat center left !important;
+}
+.config_clear {
+  background: url(images/icons/fam/cog_edit.png) no-repeat center left !important;
+}
+
+.test_excel {
+   background-color: #CCCCCC; !important;
+ }
+
+.x-excel-grid td {
+  border-collapse: collapse;
+  border-right: 1px solid groove !important; 
+  border-bottom: 0px solid groove !important; 
+  border-top: 0px solid groove !important;  
+  color: Automatic;
+  cursor: text;   
+  font-family: arial, helvetica, tahoma, sans-serif;
+  margin: 0px; 
+  padding: 0;
+}
+
+.x-excel-grid .x-grid3-cell-last {
+  background: Transparent;
+  border-right: 0px solid groove !important; 
+  border-bottom: 0px solid groove !important; 
+  border-top: 0px solid groove !important;  
+  color: Automatic;
+  cursor: text;   
+  font-family: arial, helvetica, tahoma, sans-serif;
+  text-align: left;
+  margin: 0px; 
+  padding: 0;
+}
+
+.x-excel-grid,.x-grid-group-hd,.x-grid-group-hd div{  
+  background-image: "";  
+}
+
+.user-edit {
+  background: url(images/icons/fam/user_edit.png) no-repeat center left !important; 	
+}
+
+.multi-users {
+  background: url(images/icons/fam/multi-users.png) no-repeat center left !important; 	
+}
+
+.icon-undo {
+  background: url(images/icons/application_side_contract.png) no-repeat center left !important; 	
+}
+
+.icon-old-change {
+  background: url(images/icons/old.change.gif) no-repeat center left !important; 	
+}
+
+.icon-duplicate-line {
+  background: url(images/icons/fam/folder_new.gif) no-repeat center left !important; 	
+}

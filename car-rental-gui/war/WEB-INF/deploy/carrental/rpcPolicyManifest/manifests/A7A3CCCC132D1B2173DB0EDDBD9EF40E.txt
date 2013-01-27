@@ -1,0 +1,2 @@
+serviceClass: com.company.gui.adkwidgets.client.service.SessionTimeOutDetectService
+path: 49979777203EE237EDE329F6183B5B3E.gwt.rpc
