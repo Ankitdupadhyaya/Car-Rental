@@ -10,6 +10,7 @@ import com.sencha.gxt.widget.core.client.container.BorderLayoutContainer.BorderL
 public class MainScreen {
 
 	private MainScreenMediator mediator;
+	private CarRentalTabPanel tabPanel;
 
 	public MainScreen(MainScreenMediator mediator) {
 		setMediator(mediator);
@@ -25,7 +26,7 @@ public class MainScreen {
 	}
 
 	private void buildUI() {
-		CarRentalTabPanel tabPanel = new CarRentalTabPanel();
+		tabPanel = new CarRentalTabPanel();
 
 		BorderLayoutData westData = new BorderLayoutData();
 		// westData.setSplit(true);
@@ -33,6 +34,10 @@ public class MainScreen {
 		westData.setMargins(new Margins(5));
 
 		// CarRentalFacade.getApplication().getMainPanel().addWestPanel("");
+		displayCenterPanel();
+	}
+
+	public void displayCenterPanel() {
 		CarRentalFacade.getApplication().getMainPanel().getCenterPanel().clear();
 		CarRentalFacade.getApplication().getMainPanel().getCenterPanel().add(tabPanel);
 		CarRentalFacade.getApplication().getMainPanel().getCenterPanel().layout();

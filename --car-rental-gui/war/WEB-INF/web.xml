@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app [
+	<!ENTITY webAuth SYSTEM "..\..\WebContent\WEB-INF\webAuth.xml" >
+]>
+
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Car Rental</display-name>
+<!--    
+	<listener>
+		<listener-class>com.bnpparibas.cib.almt.services.ServiceAccessWSProxy</listener-class>
+	</listener>
+	<listener>
+		<listener-class>
+			org.springframework.web.context.request.RequestContextListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:/CarRentalPersistenceContext.xml,
+			classpath:/custom-request-servicesPersistenceContext.xml
+		</param-value>
+	</context-param>
+-->
+<!--
+
+	<servlet>
+		<servlet-name>sessionTimeOutService</servlet-name>
+		<servlet-class>com.bnpparibas.cib.almt.kondor.gui.adkwidgets.server.service.SessionTimeOutDetectServiceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sessionTimeOutService</servlet-name>
+		<url-pattern>/wmiwebreporting/sessionTimeOutService</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReportExportServiceFmkImpl</servlet-name>
+		<servlet-class>com.bnpparibas.cib.almt.kondor.gui.adkwidgets.server.service.ReportExportServiceFmkImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportExportServiceFmkImpl</servlet-name>
+		<url-pattern>/wmiwebreporting/reportExport-service-fmk</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>KondorHelpListServicesFmkImpl</servlet-name>
+		<servlet-class>com.bnpparibas.cib.almt.kondor.frmk.gui.adkwidgets.server.service.KondorHelpListServicesFmkImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>KondorHelpListServicesFmkImpl</servlet-name>
+		<url-pattern>/wmiwebreporting/kondor-helplist-fmk</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>nocacheFilter</filter-name>
+		<filter-class>com.bnpparibas.cib.almt.kondor.filters.NoCacheFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>nocacheFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+-->
+
+	<servlet>
+		<servlet-name>CarRentalServiceImpl</servlet-name>
+		<servlet-class>com.company.application.carrental.server.service.CarRentalServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarRentalServiceImpl</servlet-name>
+		<url-pattern>/carrental/car-rental-service</url-pattern>
+	</servlet-mapping>
+
+	<!-- APPLICATION NAME -->
+	<context-param>
+		<param-name>appName</param-name>
+		<param-value>CarRental</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>CarRental.html</welcome-file>
+	</welcome-file-list>
+
+	&webAuth;
+
+</web-app>

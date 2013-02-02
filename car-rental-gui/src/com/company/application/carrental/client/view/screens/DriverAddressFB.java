@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.company.application.carrental.client.model.vo.DriverAddressModelDto;
+import com.company.application.carrental.client.view.mediators.DriverScreenMediator;
 import com.company.gui.adkwidgets.client.ui.field.ADKTextArea;
 import com.company.gui.adkwidgets.client.ui.field.ADKTextField;
 import com.company.gui.adkwidgets.client.ui.form.ADKFormBinding;
@@ -23,11 +24,14 @@ import com.extjs.gxt.ui.client.widget.grid.RowNumberer;
 
 public class DriverAddressFB {
 
+	private DriverScreenMediator mediator;
 	private ADKFormBinding<DriverAddressModelDto> adkFormBinding;
 	private ADKFormPanel driverControlPanel;
 
-	public DriverAddressFB() {
+	public DriverAddressFB(DriverScreenMediator mediator) {
 		super();
+
+		this.mediator = mediator;
 
 		buildUI();
 	}
@@ -119,7 +123,7 @@ public class DriverAddressFB {
 		DriverAddressModelDto driverAddressModelDto = new DriverAddressModelDto();
 		ModelData m = adkFormBinding.getCurrentFormModelData();
 		driverAddressModelDto.setProperties(m.getProperties());
-		driverAddressModelDto.setDriverId(DriverScreen.getGlobalDriverClientDto().getDriverId());
+		driverAddressModelDto.setDriverId(mediator.getGlobalDriverClientDto().getDriverId());
 		// setDisplayValues(actionsStepsModelDto);
 
 		// if (!validateStepSprintDates()) {
@@ -132,6 +136,11 @@ public class DriverAddressFB {
 
 	public ADKFormBinding<DriverAddressModelDto> getAdkFormBinding() {
 		return adkFormBinding;
+	}
+
+	public void resetAddressesFormBinding() {
+		adkFormBinding.clearFormData();
+		adkFormBinding.cleanAllDatas();
 	}
 
 	public ADKFormPanel getDriverControlPanel() {

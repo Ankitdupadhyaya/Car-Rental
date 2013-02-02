@@ -31,7 +31,10 @@ public class CarRentalCommandProvider extends MyCommandProvider {
 		} else if (CarRentalEvents.SEARCH_DRIVER_APPLICATION.equals(command)) {
 			commandToBeReturned = new SearchDriverApplicationCommand();
 
-		} else if (CarRentalEvents.GET_GENERIC_RESULT.equals(command)) {
+		}else if (CarRentalEvents.SEARCH_DRIVER_BACKGROUND.equals(command)) {
+			commandToBeReturned = new SearchDriverBackgroundCheckCommand();
+
+		}else if (CarRentalEvents.GET_GENERIC_RESULT.equals(command)) {
 			commandToBeReturned = new GetGenericResultCommand();
 
 		} else if (CarRentalEvents.GET_CUSTOM_GENERIC_RESULT.equals(command)) {

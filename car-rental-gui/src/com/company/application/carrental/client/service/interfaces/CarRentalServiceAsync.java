@@ -12,6 +12,8 @@ import com.company.application.carrental.client.model.vo.SaveDriverBackgroundChe
 import com.company.application.carrental.client.model.vo.SaveDriverBackgroundCheckOutput;
 import com.company.application.carrental.client.model.vo.SearchDriverApplicationInput;
 import com.company.application.carrental.client.model.vo.SearchDriverApplicationOutput;
+import com.company.application.carrental.client.model.vo.SearchDriverBackgroundCheckInput;
+import com.company.application.carrental.client.model.vo.SearchDriverBackgroundCheckOutput;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
 public interface CarRentalServiceAsync {
@@ -23,6 +25,8 @@ public interface CarRentalServiceAsync {
 	public void saveDriverBackgroundCheck(SaveDriverBackgroundCheckInput input, AsyncCallback<SaveDriverBackgroundCheckOutput> callback);
 
 	 public void searchDriverApplication(SearchDriverApplicationInput input, AsyncCallback<SearchDriverApplicationOutput> callback);
+	 
+	 public void searchDriverBackground(SearchDriverBackgroundCheckInput input, AsyncCallback<SearchDriverBackgroundCheckOutput> callback);
 
 	public void getGenericResult(String database, String tableName, String prefixField, String value, int maxResult,
 			AsyncCallback<List<GenericResultModelDto>> callback);

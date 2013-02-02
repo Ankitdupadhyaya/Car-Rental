@@ -7,13 +7,13 @@ import org.puremvc4gwt.client.interfaces.INotification;
 import org.puremvc4gwt.client.patterns.mediator.Mediator;
 import org.puremvc4gwt.client.patterns.observer.Notification;
 
-import com.company.gui.adkwidgets.client.ui.panel.ADKPanel;
 import com.company.application.carrental.client.CarRentalApplication;
 import com.company.application.carrental.client.CarRentalEvents;
 import com.company.application.carrental.client.CarRentalFacade;
 import com.company.application.carrental.client.ui.DisplayComponent;
 import com.company.application.carrental.client.view.screens.MainScreen;
-import com.sencha.gxt.widget.core.client.Composite;
+import com.company.gui.adkwidgets.client.ui.panel.ADKPanel;
+import com.extjs.gxt.ui.client.widget.Composite;
 
 public class MainScreenMediator extends Mediator {
 
@@ -61,6 +61,8 @@ public class MainScreenMediator extends Mediator {
 		} else if (CarRentalEvents.DISPLAY.equals(note.getName())) {
 			DisplayComponent displayComponent = (DisplayComponent) note.getBody();
 			display(displayComponent);
+
+			// getMainScreen().displayCenterPanel();
 		}
 	}
 
@@ -103,7 +105,7 @@ public class MainScreenMediator extends Mediator {
 		ADKPanel centerPanel = CarRentalFacade.getApplication().getMainPanel().getCenterPanel();
 		centerPanel.clear();
 		centerPanel.add(composite);
-		// centerPanel.layout();
+		centerPanel.layout();
 	}
 
 	public void sendNotification(String notificationName, Object notificationBody) {

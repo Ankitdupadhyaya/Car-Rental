@@ -6,6 +6,7 @@ import java.util.Map;
 
 import com.company.application.carrental.client.model.vo.DriverEmploymentModelDto;
 import com.company.application.carrental.client.ui.CarRentalConstants;
+import com.company.application.carrental.client.view.mediators.DriverScreenMediator;
 import com.company.gui.adkwidgets.client.ui.choice.ADKCheckBoxField;
 import com.company.gui.adkwidgets.client.ui.field.ADKDateField;
 import com.company.gui.adkwidgets.client.ui.field.ADKTextField;
@@ -26,11 +27,14 @@ import com.extjs.gxt.ui.client.widget.grid.RowNumberer;
 
 public class DriverEmploymentFB {
 
+	private DriverScreenMediator mediator;
 	private ADKFormBinding<DriverEmploymentModelDto> adkFormBinding;
 	private ADKFormPanel driverControlPanel;
 
-	public DriverEmploymentFB() {
+	public DriverEmploymentFB(DriverScreenMediator mediator) {
 		super();
+
+		this.mediator = mediator;
 
 		buildUI();
 	}
@@ -162,7 +166,7 @@ public class DriverEmploymentFB {
 		DriverEmploymentModelDto driverEmploymentModelDto = new DriverEmploymentModelDto();
 		ModelData m = adkFormBinding.getCurrentFormModelData();
 		driverEmploymentModelDto.setProperties(m.getProperties());
-		driverEmploymentModelDto.setDriverId(DriverScreen.getGlobalDriverClientDto().getDriverId());
+		driverEmploymentModelDto.setDriverId(mediator.getGlobalDriverClientDto().getDriverId());
 		// setDisplayValues(actionsStepsModelDto);
 
 		// if (!validateStepSprintDates()) {
@@ -175,6 +179,11 @@ public class DriverEmploymentFB {
 
 	public ADKFormBinding<DriverEmploymentModelDto> getAdkFormBinding() {
 		return adkFormBinding;
+	}
+
+	public void resetEmploymentsFormBinding() {
+		adkFormBinding.clearFormData();
+		adkFormBinding.cleanAllDatas();
 	}
 
 	public DriverEmploymentModelDto getSelectedDriverEmployment() {

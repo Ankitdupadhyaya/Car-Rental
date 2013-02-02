@@ -15,6 +15,8 @@ import com.company.application.carrental.client.model.vo.SaveDriverBackgroundChe
 import com.company.application.carrental.client.model.vo.SaveDriverBackgroundCheckOutput;
 import com.company.application.carrental.client.model.vo.SearchDriverApplicationInput;
 import com.company.application.carrental.client.model.vo.SearchDriverApplicationOutput;
+import com.company.application.carrental.client.model.vo.SearchDriverBackgroundCheckInput;
+import com.company.application.carrental.client.model.vo.SearchDriverBackgroundCheckOutput;
 import com.company.application.carrental.client.service.interfaces.CarRentalService;
 import com.company.application.carrental.server.transformUtil.DriverAddressClientTransformUtil;
 import com.company.application.carrental.server.transformUtil.DriverContactClientTransformUtil;
@@ -29,6 +31,8 @@ import com.company.carrental.services.core.dto.SaveDriverBackgroundInputDto;
 import com.company.carrental.services.core.dto.SaveDriverBackgroundOutputDto;
 import com.company.carrental.services.core.dto.SearchDriverApplicationInputDto;
 import com.company.carrental.services.core.dto.SearchDriverApplicationOutputDto;
+import com.company.carrental.services.core.dto.SearchDriverBackgroundCheckInputDto;
+import com.company.carrental.services.core.dto.SearchDriverBackgroundCheckOutputDto;
 import com.company.customrequest.services.api.service.generic.CustomRequestServiceFactory;
 import com.company.customrequest.services.core.dto.GenericResultDto;
 import com.company.customrequest.services.core.dto.HelpListInputServiceDto;
@@ -91,8 +95,8 @@ public class CarRentalServiceImpl extends RemoteServiceServlet implements
 		SaveDriverBackgroundOutputDto outputDto = driverService
 				.saveDriverBackGround(saveDriverBackgroundInputDto);
 
-		output.setDriverContactDtos(DriverContactClientTransformUtil
-				.transformToDriverContactClientList(outputDto
+		output.setDriverContactModelDtos(DriverContactClientTransformUtil
+				.transformToDriverContactModelDtoList(outputDto
 						.getDriverContactDtos()));
 		output.setDriverAddressModelDtos(DriverAddressClientTransformUtil
 				.transformToDriverAddressModelDtoList(outputDto
@@ -120,6 +124,33 @@ public class CarRentalServiceImpl extends RemoteServiceServlet implements
 		output.setDriverMasterClientDto(DriverMasterClientTransformUtil
 				.transformToDriverMasterClientDto(outputDto
 						.getDriverMasterDto()));
+		return output;
+	}
+
+	public SearchDriverBackgroundCheckOutput searchDriverBackground(
+			SearchDriverBackgroundCheckInput input) {
+		SearchDriverBackgroundCheckOutput output = new SearchDriverBackgroundCheckOutput();
+
+		SearchDriverBackgroundCheckInputDto inputDto = new SearchDriverBackgroundCheckInputDto();
+		inputDto.setDriverId(input.getDriverId());
+
+		SearchDriverBackgroundCheckOutputDto outputDto = driverService
+				.searchDriverBackgroundCheck(inputDto);
+
+		output.setDriverId(input.getDriverId());
+		output.setDriverContactModelDtos(DriverContactClientTransformUtil
+				.transformToDriverContactModelDtoList(outputDto
+						.getDriverContactDtos()));
+		output.setDriverAddressModelDtos(DriverAddressClientTransformUtil
+				.transformToDriverAddressModelDtoList(outputDto
+						.getDriverAddressDtos()));
+		output.setDriverEducationModelDtos(DriverEducationClientTransformUtil
+				.transformToDriverEducationModelDtoList(outputDto
+						.getDriverEducationDtos()));
+		output.setDriverEmploymentModelDtos(DriverEmploymentClientTransformUtil
+				.transformToDriverEmploymentModelDtoList(outputDto
+						.getDriverEmploymentDtos()));
+
 		return output;
 	}
 

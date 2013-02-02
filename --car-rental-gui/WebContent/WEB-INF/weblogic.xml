@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<security-role-assignment>
+		<role-name>WMIWEBREPORTING</role-name>
+		<externally-defined />
+	</security-role-assignment>
+	<context-root>wmi-web-reporting</context-root>
+
+	<session-descriptor>
+		<timeout-secs>36000</timeout-secs>
+	</session-descriptor>
+
+</weblogic-web-app>

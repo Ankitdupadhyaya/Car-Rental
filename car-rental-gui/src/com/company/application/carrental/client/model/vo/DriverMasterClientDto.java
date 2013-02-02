@@ -58,6 +58,14 @@ public class DriverMasterClientDto implements Serializable {
     private Set<DriverEducation> driverEducation;
     private Set<DriverEducation> driverEmployment;
 
+    public DriverMasterClientDto(){
+    	super();
+    }
+    
+    public DriverMasterClientDto(Integer driverId){
+    	this.driverId = driverId;
+    }
+    
     public Integer getApplicationId() {
         return applicationId;
     }

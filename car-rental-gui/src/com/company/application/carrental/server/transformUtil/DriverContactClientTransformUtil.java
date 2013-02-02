@@ -10,7 +10,7 @@ import com.company.carrental.services.core.dto.DriverContactDto;
 public class DriverContactClientTransformUtil{
  
 
-    public static List<DriverContactModelDto> transformToDriverContactClientList(List<DriverContactDto> driverContactDtos){
+    public static List<DriverContactModelDto> transformToDriverContactModelDtoList(List<DriverContactDto> driverContactDtos){
         if(driverContactDtos == null){
             return null;
         }

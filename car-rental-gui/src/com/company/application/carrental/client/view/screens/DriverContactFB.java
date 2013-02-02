@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.company.application.carrental.client.model.vo.DriverContactModelDto;
+import com.company.application.carrental.client.view.mediators.DriverScreenMediator;
 import com.company.gui.adkwidgets.client.ui.choice.ADKCheckBoxField;
 import com.company.gui.adkwidgets.client.ui.field.ADKTextField;
 import com.company.gui.adkwidgets.client.ui.form.ADKFormBinding;
@@ -24,11 +25,14 @@ import com.extjs.gxt.ui.client.widget.grid.RowNumberer;
 
 public class DriverContactFB {
 
+	private DriverScreenMediator mediator;
 	private ADKFormBinding<DriverContactModelDto> adkFormBinding;
 	private ADKFormPanel driverControlPanel;
 
-	public DriverContactFB() {
+	public DriverContactFB(DriverScreenMediator mediator) {
 		super();
+
+		this.mediator = mediator;
 
 		buildUI();
 	}
@@ -122,7 +126,7 @@ public class DriverContactFB {
 		DriverContactModelDto driverContactModelDto = new DriverContactModelDto();
 		ModelData m = adkFormBinding.getCurrentFormModelData();
 		driverContactModelDto.setProperties(m.getProperties());
-		driverContactModelDto.setDriverId(DriverScreen.getGlobalDriverClientDto().getDriverId());
+		driverContactModelDto.setDriverId(mediator.getGlobalDriverClientDto().getDriverId());
 		// setDisplayValues(actionsStepsModelDto);
 
 		// if (!validateStepSprintDates()) {
@@ -135,6 +139,11 @@ public class DriverContactFB {
 
 	public ADKFormBinding<DriverContactModelDto> getAdkFormBinding() {
 		return adkFormBinding;
+	}
+
+	public void resetContactsFormBinding() {
+		adkFormBinding.clearFormData();
+		adkFormBinding.cleanAllDatas();
 	}
 
 	public DriverContactModelDto getSelectedDriverContact() {

@@ -22,8 +22,12 @@ public class CarRentalEvents {
 	public static final String SAVE_DRIVER_BACKGROUND_CHECK_FAILED = "saveDriverBackgroundCheckFailed";
 
 	public static final String SEARCH_DRIVER_APPLICATION = "searchDriverApplication";
-	public static final String SEARCH_DRIVER_APPLICATION_SUCCESSFUL = "searchDriverSuccessful";
-	public static final String SEARCH_DRIVER_APPLICATION_FAILED = "searchDriverFailed";
+	public static final String SEARCH_DRIVER_APPLICATION_SUCCESSFUL = "searchDriverApplicationSuccessful";
+	public static final String SEARCH_DRIVER_APPLICATION_FAILED = "searchDriverApplicationFailed";
+	
+	public static final String SEARCH_DRIVER_BACKGROUND = "searchDriverBackground";
+	public static final String SEARCH_DRIVER_BACKGROUND_SUCCESSFUL = "searchDriverBackgroundSuccessful";
+	public static final String SEARCH_DRIVER_BACKGROUND_FAILED = "searchDriverBackgroundFailed";
 
 	public static final String GET_GENERIC_RESULT = "genericResult";
 	public static final String GET_GENERIC_RESULT_SUCCESS = "genericResultSuccess";

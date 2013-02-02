@@ -12,6 +12,8 @@ import com.company.application.carrental.client.model.vo.SaveDriverBackgroundChe
 import com.company.application.carrental.client.model.vo.SaveDriverBackgroundCheckOutput;
 import com.company.application.carrental.client.model.vo.SearchDriverApplicationInput;
 import com.company.application.carrental.client.model.vo.SearchDriverApplicationOutput;
+import com.company.application.carrental.client.model.vo.SearchDriverBackgroundCheckInput;
+import com.company.application.carrental.client.model.vo.SearchDriverBackgroundCheckOutput;
 import com.company.application.carrental.client.service.interfaces.CarRentalService;
 import com.company.application.carrental.client.service.interfaces.CarRentalServiceAsync;
 import com.google.gwt.core.client.GWT;
@@ -55,7 +57,11 @@ public final class CarRentalServiceProxy {
 	 public void searchDriverApplication(SearchDriverApplicationInput input, AsyncCallback<SearchDriverApplicationOutput> callback) {
 	 proxy.searchDriverApplication(input, callback);
 	 }
-
+	 
+	 public void searchDriverBackground(SearchDriverBackgroundCheckInput input, AsyncCallback<SearchDriverBackgroundCheckOutput> callback) {
+		 proxy.searchDriverBackground(input, callback);
+		 }
+	 
 	public void getGenericResult(String database, String tableName, String prefixField, String value, int maxResult,
 			AsyncCallback<List<GenericResultModelDto>> callback) {
 		proxy.getGenericResult(database, tableName, prefixField, value, maxResult, callback);

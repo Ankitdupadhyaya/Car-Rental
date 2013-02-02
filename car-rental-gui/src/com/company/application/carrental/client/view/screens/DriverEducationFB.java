@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.company.application.carrental.client.model.vo.DriverEducationModelDto;
+import com.company.application.carrental.client.view.mediators.DriverScreenMediator;
 import com.company.gui.adkwidgets.client.ui.field.ADKTextField;
 import com.company.gui.adkwidgets.client.ui.form.ADKFormBinding;
 import com.company.gui.adkwidgets.client.ui.grid.ADKColumnConfig;
@@ -22,11 +23,14 @@ import com.extjs.gxt.ui.client.widget.grid.RowNumberer;
 
 public class DriverEducationFB {
 
+	private DriverScreenMediator mediator;
 	private ADKFormBinding<DriverEducationModelDto> adkFormBinding;
 	private ADKFormPanel driverControlPanel;
 
-	public DriverEducationFB() {
+	public DriverEducationFB(DriverScreenMediator mediator) {
 		super();
+
+		this.mediator = mediator;
 
 		buildUI();
 	}
@@ -129,7 +133,7 @@ public class DriverEducationFB {
 		DriverEducationModelDto driverEducationModelDto = new DriverEducationModelDto();
 		ModelData m = adkFormBinding.getCurrentFormModelData();
 		driverEducationModelDto.setProperties(m.getProperties());
-		driverEducationModelDto.setDriverId(DriverScreen.getGlobalDriverClientDto().getDriverId());
+		driverEducationModelDto.setDriverId(mediator.getGlobalDriverClientDto().getDriverId());
 		// setDisplayValues(actionsStepsModelDto);
 
 		// if (!validateStepSprintDates()) {
@@ -142,6 +146,11 @@ public class DriverEducationFB {
 
 	public ADKFormBinding<DriverEducationModelDto> getAdkFormBinding() {
 		return adkFormBinding;
+	}
+
+	public void resetEducationsFormBinding() {
+		adkFormBinding.clearFormData();
+		adkFormBinding.cleanAllDatas();
 	}
 
 	public DriverEducationModelDto getSelectedDriverEducation() {

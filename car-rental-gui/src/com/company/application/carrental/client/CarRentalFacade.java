@@ -9,6 +9,7 @@ import com.company.application.carrental.client.controller.LoadMasterDataCommand
 import com.company.application.carrental.client.controller.SaveDriverApplicationCommand;
 import com.company.application.carrental.client.controller.SaveDriverBackgroundCheckCommand;
 import com.company.application.carrental.client.controller.SearchDriverApplicationCommand;
+import com.company.application.carrental.client.controller.SearchDriverBackgroundCheckCommand;
 import com.company.application.carrental.client.controller.StartupCommand;
 import com.company.gui.adkwidgets.client.ApplicationFacade;
 import com.google.gwt.core.client.GWT;
@@ -40,6 +41,7 @@ public final class CarRentalFacade extends ApplicationFacade {
 		registerCommand(CarRentalEvents.SAVE_DRIVER_APPLICATION, SaveDriverApplicationCommand.class);
 		registerCommand(CarRentalEvents.SAVE_DRIVER_BACKGROUND_CHECK, SaveDriverBackgroundCheckCommand.class);
 		registerCommand(CarRentalEvents.SEARCH_DRIVER_APPLICATION, SearchDriverApplicationCommand.class);
+		registerCommand(CarRentalEvents.SEARCH_DRIVER_BACKGROUND, SearchDriverBackgroundCheckCommand.class);
 
 		registerCommand(CarRentalEvents.GET_GENERIC_RESULT, GetGenericResultCommand.class);
 		registerCommand(CarRentalEvents.GET_CUSTOM_GENERIC_RESULT, GetCustomGenericResultCommand.class);

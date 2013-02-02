@@ -15,11 +15,11 @@ public class SaveDriverBackgroundCheckOutput implements Serializable {
     private List<DriverEducationModelDto> driverEducationModelDtos;
     private List<DriverEmploymentModelDto> driverEmploymentModelDtos;
 
-    public List<DriverContactModelDto> getDriverContactDtos() {
+    public List<DriverContactModelDto> getDriverContactModelDtos() {
         return driverContactModelDtos;
     }
 
-    public void setDriverContactDtos(List<DriverContactModelDto> driverContactDtos) {
+    public void setDriverContactModelDtos(List<DriverContactModelDto> driverContactDtos) {
         this.driverContactModelDtos = driverContactDtos;
     }
 
